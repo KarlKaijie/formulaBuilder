@@ -1,0 +1,13 @@
+Token
+  |
+  |----- Empty Token
+  |----- Function Token <container>
+  |           |
+  |           |----- Function type1
+  |           |----- Function type2
+  |           |----- ....
+  | 
+  |----- Arithmetic Token ( a token with two operands and a operator in the middle) <container>
+  |----- Const Token (like PI, e, etc. user can't modify it)
+  |----- Input Token (input box to input string|integer|float) //1.5 " "
+  |----- Field Token (input a variable by existed field.) // variable

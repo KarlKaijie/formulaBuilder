@@ -1,0 +1,66 @@
+.fml-flex {
+  display: flex;
+}
+
+.fml-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fml-flex-1 {
+  flex: 1;
+}
+
+.fml-jc{
+  justify-content: center;
+}
+
+.fml-ac {
+  align-self: center;
+}
+
+.fml-rr {
+  flex-direction: row-reverse;
+}
+
+.fml-direction-column {
+  flex-direction: column;
+}
+
+.fml-jsb {
+  justify-content: space-between;
+}
+
+.fml-flex-end {
+  justify-content: flex-end;
+}
+
+.fml-relative {
+  position: relative;
+}
+
+.fml-curpointer {
+  cursor: pointer;
+}
+
+.fml-mb-12 {
+  margin-bottom: 12px;
+}
+
+.fml-ml-12 {
+  margin-left: 12px;
+}
+
+.fml-py-4{
+  padding: 2px 0;
+}
+
+.vertical-sub {
+  vertical-align: sub;
+}
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.fml-text-primary {
+  color: #0084ff;
+}

@@ -1,0 +1,175 @@
+.fml-token{
+    cursor: pointer;
+    padding: 8px 0px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 4px;
+    word-break: break-all;
+    vertical-align: middle;
+    border: 1px dashed transparent;
+   
+    &.active{
+        border-color: var(--color) !important;
+    }
+    .fml-token-placeholder {
+        padding: 0 4px;
+        color: #eee;
+    }
+    .fml-token-min-space {
+        padding: 8px 12px;
+    }
+}
+
+.fml-empty{
+    --color: #aaa;
+    border: 1px dashed #eee;
+}
+
+.fml-const{
+    --color: red;
+    font-weight: bold !important;
+}
+.fml-input{
+    --color: green;
+    padding: 8px 12px;
+    font-weight: normal !important;
+}
+
+.fml-field{
+    --color: #0084FF;
+    font-weight: normal !important;
+}
+
+.fml-function{
+    --color: #c0399f;
+   
+    .fml-function-name{
+        font-weight: bold !important;
+        vertical-align: middle;
+        padding-left: 2px;
+        &:hover{
+            color:var(--color) !important;
+        }
+    }
+    .fml-function-comma {
+        margin: 0 6px 0 2px;
+        color: var(--color);
+    }
+    .fml-function-bracket {
+        color: var(--color);
+        width: 4px;
+        padding: 0 2px;
+        display: inline-block;
+        text-align: center;
+        border: 1px dashed transparent;
+        cursor: pointer;
+        vertical-align: middle;
+        &.active{
+            border-color: black !important;
+        }
+    }
+
+}
+
+
+.fml-arith{
+    --color: orange;
+    .fml-arith-operator {
+        margin: 0 8px;
+        color: var(--color);
+    }
+    .fml-arith-bracket{
+        color:var(--color) !important;
+        width: 4px;
+        padding: 0 2px;
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        border: 1px dashed transparent;
+        cursor: pointer;
+        vertical-align: middle;
+        &.active{
+            border-color: black !important;
+        }
+    }
+}
+
+
+.fml-field-line {
+    width: 1px;
+    height: 80%;
+    border-right: 1px dashed #ccc;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+.fml-formula-add {
+    user-select: none;
+
+    svg {
+        font-size: 16px;
+        vertical-align: middle;
+        font-weight: normal;
+        opacity: 0.4;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+}
+
+.fml-formula-reset {
+    svg {
+        position: absolute;
+        top: -9px;
+        left: -10px;
+        font-size: 12px;
+        color: red;
+        vertical-align: middle;
+        font-weight: normal;
+        margin: 0 4px;
+        opacity: 0.6;
+        z-index: 9;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+}
+
+.fml-formula-delete {
+    svg {
+        position: absolute;
+        top: 28px;
+        left: -10px;
+        font-size: 12px;
+        color: red;
+        vertical-align: middle;
+        font-weight: normal;
+        margin: 0 4px;
+        opacity: 0.6;
+        z-index: 9;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+}

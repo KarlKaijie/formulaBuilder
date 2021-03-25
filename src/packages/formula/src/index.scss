@@ -1,0 +1,349 @@
+.fml-container {
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .fml-svg-icon {
+        width: 1.2em;
+        height: 1.2em;
+        fill: currentColor;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .fml-left {
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+        padding: 12px;
+        flex: 1;
+
+        .fml-buttons {
+            width: 100%;
+            align-items: center;
+
+            .fml-buttons-item {
+                padding: 0 4px;
+                min-width: 16px;
+                height: 24px;
+                border-radius: 3px;
+                border: 1px solid #0084ff;
+                cursor: pointer;
+                font-size: 12px;
+                text-align: center;
+                line-height: 24px;
+                margin: 4px;
+                user-select: none;
+                color: #0084ff;
+
+                &:hover {
+                    color: orange;
+                    border-color: orange;
+                    opacity: 0.6;
+                }
+
+                &:active {
+                    opacity: 1;
+                }
+            }
+
+            .fml-operator-button {
+                width: 24px;
+                height: 24px;
+                padding: 0;
+                border-color: orange;
+                color: #000;
+            }
+
+            svg {
+                width: 12px;
+                height: 12px;
+                vertical-align: middle;
+            }
+        }
+
+        .fml-edit-container {
+            width: 100%;
+            height: 350px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 18px 12px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+    }
+
+    .fml-right {
+        width: 260px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 0 4px 4px 0;
+        border-left: none;
+
+        .fml-fields-container {
+            width: 100%;
+            height: 100%;
+            max-height: 610px;
+            overflow: hidden;
+
+            .fml-title-vertical {
+                padding-bottom: 4px;
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid #eee;
+                padding: 8px 12px;
+                box-sizing: border-box;
+            }
+
+            ul {
+                overflow: auto;
+                height: calc(100% - 42px);
+                margin: 0 12px;
+                li {
+                    margin: 2px 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .fml-bottom {
+        border: 1px solid #eee;
+        margin-top: 12px;
+        border-radius: 4px;
+        height: 180px;
+        overflow: hidden;
+
+        .fml-desc {
+            width: 60%;
+            height: 100%;
+            border-left: 1px solid #eee;
+            padding: 12px;
+            box-sizing: border-box;
+            word-break: break-word;
+            overflow: auto;
+            color: #333;
+
+            p {
+                font-size: 12px;
+                line-height: 24px;
+                margin: 0;
+            }
+
+            span {
+                color: #666;
+            }
+        }
+
+        .fml-bottom-wrap {
+            overflow: hidden;
+
+            .fml-title-vertical {
+                padding-bottom: 4px;
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid #eee;
+                padding: 8px 6px;
+                box-sizing: border-box;
+            }
+
+            ul {
+                overflow: auto;
+                height: calc(100% - 35px);
+                padding: 0 4px;
+            }
+
+            .fml-functoken-item {
+                height: 18px;
+                border-bottom: 1px dashed #eee;
+                cursor: pointer;
+                font-size: 12px;
+                display: flex;
+                margin: 4px;
+                user-select: none;
+
+                &:hover {
+                    color: #0084ff;
+                    border-color: #0084ff;
+                    opacity: 0.6;
+                }
+
+                &:active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .fml-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 8px;
+        color: #333;
+    }
+
+    .fml-tip {
+        color: #999;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: normal;
+        display: inline-block;
+        min-width: 52px;
+        min-height: 30px;
+        padding: 0 8px;
+        border: 1px dashed #0084ff;
+        margin: 0 4px;
+        vertical-align: middle;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .fml-formula-clear {
+        color: #999;
+        font-size: 12px;
+        cursor: pointer;
+        user-select: none;
+
+        svg {
+            color: #999;
+            font-size: 12px;
+            font-weight: normal;
+            opacity: 0.8;
+            z-index: 1;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+
+    // .fml-formula {
+    //   display: inline;
+    //   line-height: 32px;
+    //   font-size: 14px;
+    //   font-weight: bold;
+    //   vertical-align: middle;
+    //   //padding-left: 12px !important;
+    //   //padding-right: 12px !important;
+    //   user-select: none;
+
+    //   .fml-formula-field {
+    //     display: inline-block;
+    //     min-width: 52px;
+    //     padding: 0 8px;
+    //     border: 1px dashed #eee;
+    //     margin: 4px 0;
+    //     vertical-align: middle;
+    //     border-radius: 4px;
+    //     cursor: pointer;
+    //     text-align: center;
+    //     min-height: 30px;
+    //     word-break: break-all;
+    //   }
+
+    //   .fml-function-name {
+    //     &:hover {
+    //       color: #0084ff !important;
+    //     }
+    //   }
+
+    //   .fml-function-comma {
+    //     margin: 0 8px 0 0;
+    //     color: #c0399f;
+    //   }
+
+    //   .fml-formula-field-active {
+    //     border-color: #0084ff;
+    //   }
+
+    //   .fml-formula-arith-active {
+    //     border-color: orange;
+    //   }
+
+    //   &. {
+    //     padding: 0 4px;
+    //     border-radius: 4px;
+    //     border: 1px dashed transparent;
+    //   }
+
+    //   &.-active {
+    //     border-color: #0084ff;
+    //   }
+    // }
+
+    // .fml-operator, .fml-arith-bracket {
+    //   color: #c0399f;
+    //   display: inline-block;
+    //   width: 12px;
+    //   // height: 100%;
+    //   text-align: center;
+    //   border: 1px dashed transparent;
+    //   cursor: pointer;
+    //   vertical-align: middle;
+    // }
+    // .fml-operator-item {
+    //   color: #c0399f;
+    //   display: inline-block;
+    //   text-align: center;
+    //   width: 16px;
+    //   height: 100%;
+    //   font-weight: bold;
+    //   .fml-operator-svg-icon {
+    //     width: 12px !important;
+    //     height: 12px !important;
+    //     vertical-align: middle;
+    //   }
+    // }
+
+    // .fml-operator-active {
+    //   border: 1px dashed #0084ff;
+    //   color: #0084ff;
+    // }
+
+    // .fml-arith-bracket {
+    //   color: orange;
+    // }
+
+    // .fml-arith-token {
+    //   border: 1px dashed transparent;
+    //   padding: 8px 0 12px 6px;
+    //   border-radius: 4px;
+    //   display: inline-block;
+    // }
+
+    // .fml-arith-token-active {
+    //   border: 1px dashed orange !important;
+    // }
+
+    // .fml-parent-delete {
+    //   span {
+    //     right: -12px;
+    //   }
+    // }
+
+    // .fml-token-placeholder {
+    //   color: #eee;
+    // }
+
+    // .fml-formula-formula {
+    //   display: inline-block;
+    //   cursor: pointer;
+    //   // height: 100%;
+    //   vertical-align: middle;
+    // }
+}
