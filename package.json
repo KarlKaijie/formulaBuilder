@@ -1,6 +1,6 @@
 {
   "name": "formula_builder_vue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FormulaBuilderVue",
   "main": "dist/index.js",
   "scripts": {
