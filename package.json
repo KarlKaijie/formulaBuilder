@@ -1,7 +1,7 @@
 {
-  "name": "formula-builder-vue",
+  "name": "formula_builder_vue",
   "version": "0.1.0",
-  "description": "FormulaBuilder",
+  "description": "FormulaBuilderVue",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --progress --config=./build/webpack.prd.config.js --mode=production",
